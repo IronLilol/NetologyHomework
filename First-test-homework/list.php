@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Р”СЂРѕР·РґРёРЅ
- * Date: 14.03.2018
- * Time: 18:29
- */
+$dir ='tests/';
+$list=scandir($dir);
+$z=count(scandir('tests/'))-1;
+$x=2;
+do {
+    echo $list[$x],"  ", "Это тест номер ", $x-1, "</br>";
+
+}   while ($x++<$z);
+
+
+?>
